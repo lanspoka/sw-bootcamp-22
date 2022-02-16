@@ -1,64 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Card</title>
 </head>
-
-<body>
-
+<div class="section">
+    <!-- container -->
     <div class="container">
-        <div class="nav-container">
-            <div class="left">
+        <!-- row -->
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h3 class="title">Product List
+                    </h3>
+                    <div class="section-nav">
+                        <ul class="section-tab-nav tab-nav">
+                            <li>
 
-                <div class="logo"><img src="images/Union.png" alt="">pineapple.</div>
-            </div>
-            <div class="right">
-                <nav class="menu-items">
-                    <a href="#">About</a>
-                    <a href="#">How it works</a>
-                    <a class="btn dark" href="#">Contact</a>
-                </nav>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab1">ADD
+                  </a>
+                            </li>
+                            <li>
+                                <a data-toggle="tab" href="#tab1">MASS DELETE
+                  </a>
+                            </li>
+                            <li class="active">
 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <header class="image-section">
-            <div class="left">
-                <h1>Subscribe to newsletter</h1>
-                <p class="sub-heading">
-                    Subscribe to our newsletter and get 10% discount on pineapple glasses.
-                </p>
-                <form action="/submitEmail.php" method="POST">
-                    <p>Type your email address here… <input type="text" name="email" /></p>
-                    <input type="submit" value="Submit Email" />
-                </form>
+        <body>
+            <div class="container">
+                <div class="card-1 card-div">
+                    <div class="like-icon-div">
+                        <label for="card-1-like" class="like-icon-div-child">
+                    <input type="checkbox" id="card-1-like">
+                    <i class="far fa-heart heart-empty"></i>
+                    <i class="fas fa-heart heart-fill"></i>
+                </label>
+                    </div>
+
+                    <div class="gow-img-div img-div">
+                        <img src="anime-girl.png" alt="anime-girl">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="item-name">White hair Anime Girl</h2>
+                        <p class="sku">ANI010206</p>
+                        <p class="date"> Departure date: 31/03/2021 </p>
+                        <div class="pricing-and-cart">
+                            <div class="pricing">
+                                <p class="previous-price">$999</p>
+                                <p class="current-price">$599</p>
+                                <p class="weight">2kg</p>
+                            </div>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-2 card-div">
+                    <div class="like-icon-div">
+                        <label for="card-2-like" class="like-icon-div-child">
+                    <input type="checkbox" id="card-2-like">
+                    <i class="far fa-heart heart-empty"></i>
+                    <i class="fas fa-heart heart-fill"></i>
+                </label>
+                    </div>
+                    <div class="sekiro-img-div img-div">
+                        <img src="nezuko.png" alt="nezuko">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="item-name">Nezuko</h2>
+                        <p class="sku">ANI010205</p>
+                        <p class="date"> Departure date: 31/03/2021 </p>
+                        <div class="pricing-and-cart">
+                            <div class="pricing">
+                                <p class="previous-price">$50</p>
+                                <p class="current-price">$799</p>
+                                <p class="weight">3kg</p>
+                            </div>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3 card-div">
+                    <div class="like-icon-div">
+                        <label for="card-3-like" class="like-icon-div-child">
+                    <input type="checkbox" id="card-3-like">
+                    <i class="far fa-heart heart-empty"></i>
+                    <i class="fas fa-heart heart-fill"></i>
+                </label>
+                    </div>
+                    <div class="youruichi img-div">
+                        <img src="youruichi.png" alt="youruichi">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="item-name">Youruichi</h2>
+                        <p class="sku">ANI010204</p>
+                        <p class="date"> Departure date: 31/03/2021 </p>
+                        <div class="pricing-and-cart">
+                            <div class="pricing">
+                                <p class="previous-price">$449</p>
+                                <p class="current-price">$279</p>
+                                <p class="weight">4kg</p>
+                            </div>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-4 card-div">
+                    <div class="like-icon-div">
+                        <label for="card-4-like" class="like-icon-div-child">
+                    <input type="checkbox" id="card-4-like">
+                    <i class="far fa-heart heart-empty"></i>
+                    <i class="fas fa-heart heart-fill"></i>
+                </label>
+                    </div>
+                    <div class="u4-img-div img-div">
+                        <img src="zero-two.png" alt="u4-figurine">
+                    </div>
+                    <div class="text-container">
+                        <h2 class="item-name">Zero two</h2>
+                        <p class="sku">ANI010203</p>
+                        <p class="date"> Departure date: 31/03/2021 </p>
+                        <div class="pricing-and-cart">
+                            <div class="pricing">
+                                <p class="previous-price">$759</p>
+                                <p class="current-price">$499</p>
+                                <p class="weight">5kg</p>
+                            </div>
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="mid">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Facebook_icon_2013.svg/1024px-Facebook_icon_2013.svg.png" alt="">
-                <img src="https://www.nicepng.com/png/full/1-12860_new-instagram-logo-png-transparent-png-format-instagram.png" alt="">
-                <img src="https://pnggrid.com/wp-content/uploads/2021/07/Twitter-Logo-Square.png" alt="">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/640px-YouTube_icon_%282013-2017%29.png" alt="">
-
-            </div>
-            <div class="right">
-                <img src="https://www.freeiconspng.com/img/41157" alt="">
-
-            </div>
-        </header>
-
-
-
-
+        </body>
     </div>
-
-    <script src="main.js"></script>
-</body>
+</div>
 
 </html>
